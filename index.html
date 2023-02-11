@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="./img//favicon-32x32.b71481b0.png" type="image/x-icon">
+   <link rel="stylesheet" href="./css/index.49c9a8a6.css">
+   <title>Interactive Card Details Form</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <main class="main-container">
+         <div class="header-wrapper">
+            <div class="header">
+               <img src="./img/bg-card-back.fea83862.png" alt="card_back">
+               <img src="./img/bg-card-front.246b5004.png" alt="card_front">
+               <img src="./img/card-logo.7d0337df.svg" alt="">
+               <span class="card-cvc--text">000</span>
+               <div class="front--text">
+                  <span class="card-number--text">OOOO OOOO OOOO OOOO</span>
+                  <span class="card-name--text">Jane Appleseed</span>
+                  <div class="card-date--text">
+                     <span id="month">OO</span>/
+                     <span id="year">OO</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="form">
+            <div>
+               <label for="card_name">Cardholder name</label>
+               <input type="text" id="card_name" maxlength="24" placeholder="e.g Jane Appleseed" data-type="letters">
+               <span class="warning"></span>
+            </div>
+
+            <div>
+               <label for="card_number">Card number</label>
+               <input type="text" id="card_number" maxlength="16" placeholder="e.g 1234 4678 9123 0000"
+                  data-type="numbers">
+               <span class="warning"></span>
+            </div>
+
+
+            <div class="form__subcontainer">
+               <div class="form__subcontainer--1">
+                  <label for="exp_date_month">Exp. date (mm/yy)</label>
+                  <input class="exp-date" type="text" maxlength="2" id="exp_date_month" placeholder="MM"
+                     data-type="numbers">
+                  <input class="exp-date" type="text" maxlength="2" id="exp_date_year" placeholder="YY"
+                     data-type="numbers">
+                  <span class="warning"></span>
+               </div>
+
+               <div class="form__subcontainer--2">
+                  <label for="cvc">cvc</label>
+                  <input type="text" maxlength="3" id="cvc" placeholder="e.g 123" data-type="numbers">
+                  <span class="warning"></span>
+               </div>
+            </div>
+            <button class="confirm-btn">Confirm</button>
+         </div>
+         <div class="finish d-none">
+            <img src="./img/icon-complete.svg" alt="Complete">
+            <h1 class="complete-title">Thank you!</h1>
+            <span>We've added your card details</span>
+            <button class="continue-btn">Continue</button>
+         </div>
+      </main>
+   </div>
+   <script src="./script/index.d4a8b14f.js"></script>
+</body>
+
+</html>
